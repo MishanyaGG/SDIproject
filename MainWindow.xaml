@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SDIproject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="780" Width="1240">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/MainWindowResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
 
+        <Grid Grid.Column="0" Background="#FFC773">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" x:Name="StackPython">
+                <Button x:Name="BtnPython" 
+                        Style="{StaticResource ButtonMenu}">
+                    <Image Source="/Assets/Image/Python.png"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" x:Name="StackPHP">
+                <Button x:Name="BtnPHP" 
+                        Style="{StaticResource ButtonMenu}">
+                    <Image Source="/Assets/Image/PHP.png"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" x:Name="StackCplusplus">
+                <Button x:Name="BtnCplusplus" 
+                        Style="{StaticResource ButtonMenu}">
+                    <Image Source="/Assets/Image/Cplusplus.png"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" x:Name="Settings">
+                <Button x:Name="BtnSettings" 
+                        Style="{StaticResource ButtonMenu}">
+                    <Image Source="/Assets/Image/setting.png"/>
+                </Button>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

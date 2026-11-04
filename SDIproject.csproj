@@ -9,7 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Image\" />
+    <None Remove="Assets\Image\Cplusplus.png" />
+    <None Remove="Assets\Image\PHP.png" />
+    <None Remove="Assets\Image\Python.png" />
+    <None Remove="Assets\Image\setting.png" />
+    <None Remove="Python.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Image\Cplusplus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Image\PHP.png" />
+    <Resource Include="Assets\Image\Python.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Image\setting.png" />
   </ItemGroup>
 
 </Project>
