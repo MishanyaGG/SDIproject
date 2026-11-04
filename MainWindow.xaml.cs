@@ -16,9 +16,21 @@ namespace SDIproject
     /// </summary>
     public partial class MainWindow : Window
     {
+        Button _selectedEl;
+        StackPanel _stackSelectedEl;
         public MainWindow()
         {
             InitializeComponent();
+            _stackSelectedEl = (StackPanel)BtnPython.Parent;
+        }
+
+        private void SwithSelect(object sender, RoutedEventArgs e)
+        {
+            _stackSelectedEl.Style = null;
+            _selectedEl = (Button)sender;
+            _stackSelectedEl = (StackPanel)_selectedEl.Parent;
+
+            _stackSelectedEl.Style = (Style)this.FindResource("SelectedButtonMenu");
         }
     }
 }
