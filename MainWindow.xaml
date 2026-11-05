@@ -70,6 +70,6 @@
             </StackPanel>
         </Grid>
 
-        <Frame Name="FrameArea" Grid.Column="1" Background="#689CD2"/>
+        <Frame x:Name="FrameArea" Grid.Column="1" Background="#689CD2"/>
     </Grid>
 </Window>

@@ -22,6 +22,7 @@ namespace SDIproject
         {
             InitializeComponent();
             _stackSelectedEl = (StackPanel)BtnPython.Parent;
+            FrameArea.Source = new Uri("PythonPage.xaml", UriKind.Relative);
         }
 
         private void SwithSelect(object sender, RoutedEventArgs e)
